@@ -25,7 +25,7 @@ export function Header({ onAddTask }: NewTasks) {
 		<header className={styles.header}>
 			<img src={Logo} alt="Logotipo do To Do List" />
 
-			<form className={styles.newTaskForm}>
+			<form className={styles.newTaskForm} onSubmit={handleSubmit}>
 				<input placeholder="Adicione uma nova tarefa" type="text" value={title} onChange={onChangeTitle} />
 				<button>
 					Criar
